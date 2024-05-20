@@ -1,7 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import Calculadora from '../../components/Calculadora';
-import React, { act } from 'react';
-import * as  Calculo from '../Calculo';
+import Calculadora from '../components/Calculadora';
+import * as  Calculo from '../components/Calculo';
 import userEvent from '@testing-library/user-event'
 
 
@@ -26,7 +25,7 @@ describe("Calculadora", () => {
 
   test('clicar botão e alterar display', () => {
     const container = RenderPage();
-    const buttonNumberOne = screen.getByRole('button', { name: "1"})
+    const buttonNumberOne = screen.getByRole('button', { name: "1" })
     userEvent.click(buttonNumberOne)
     const spanElement = container.querySelector('.display-number')
 
