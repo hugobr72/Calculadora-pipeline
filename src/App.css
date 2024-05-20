@@ -1,0 +1,18 @@
+.App{
+  background-color: #6592e0;
+  height: 100vh;
+}
+
+.App .title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.App .display{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
