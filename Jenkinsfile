@@ -5,6 +5,13 @@ pipeline{
   }
 
   stages{
+
+    stage("Run Unit Tests"){
+      steps{
+        bat "npm test"
+      }
+    }
+
     stage("Build"){
       steps{
         bat "npm install"
@@ -12,10 +19,5 @@ pipeline{
       }
     }
 
-    stage("Run Unit Tests"){
-      steps{
-        bat "npm run test"
-      }
-    }
   }
 }
