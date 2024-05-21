@@ -30,13 +30,13 @@ describe("Calculadora", () => {
     const spanElement = container.querySelector('.display-number')
 
     // Verifica se o conteúdo do span mudou corretamente
-    expect(spanElement).toHaveTextContent('');
+    expect(spanElement).toHaveTextContent('1');
 
     // Simula clique no botão de limpar
     fireEvent.click(screen.getByText('C'));
 
     // Verifica se o conteúdo do span foi limpo
-    expect(spanElement).toHaveTextContent('');
+    expect(spanElement).toBeEmptyDOMElement();
   })
 
 });
